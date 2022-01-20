@@ -69,7 +69,7 @@ You can find a list of items shortname by searching the web for `rust item short
 ```
 
 # Data File Example
-```
+```json
 {
   "Entries": [
     {
@@ -81,7 +81,7 @@ You can find a list of items shortname by searching the web for `rust item short
       "Distribution Type (SpecificPlayers/MapPlayers/ServerPlayers/Everyone)": "MapPlayers",
       "Delete Entry On Map Wipe (true/false)": false,
       "Pending Players": [
-        765111xxxxxxxxxxx
+        76511100000000000
       ],
       "Given Players": []
     },
@@ -95,7 +95,7 @@ You can find a list of items shortname by searching the web for `rust item short
       "Delete Entry On Map Wipe (true/false)": true,
       "Pending Players": [],
       "Given Players": [
-        765111xxxxxxxxxxx
+        76511100000000000
       ]
     }
   ]
