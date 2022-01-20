@@ -106,6 +106,33 @@ You can find a list of items shortname by searching the web for `rust item short
 The log files are located in `oxide/logs/SmartGifts/smartgifts_-YYYY-MM-DD.txt`.
 
 # Localization
+```json
+{
+  "LangVersion": "0.0.1",
+  "Error": "An error occured.",
+  "Invalid_syntax": "Invalid syntax.",
+  "Invalid_item_shortname": "Invalid item shortname.",
+  "Invalid_distribution_type_cannot_add_pending_players": "Cannot add to pending players, Invalid distribution type.",
+  "Invalid_distribution_type_cannot_add_given_players": "Cannot add to given players, Invalid distribution type.",
+  "Required_field_players_steam_id": "Players SteamID field is required.",
+  "Entry_invalid_id": "Invalid entry ID.",
+  "Entry_new_item": "Created Item Entry (ID: {entryID} - ShortName: {shortName}, Amount: {amount} - DistributionType: {distributionType} - Players: {playersSteamIDs} - DeleteEntryOnMapWipe: {deleteEntryOnMapWipe})",
+  "Entry_list": "All Entry IDs ({entryIDs}).",
+  "Entry_view_item": "Entry Details (ID: {entryID} - ShortName: {shortName}, Amount: {amount} - DistributionType: {distributionType} - Players: {playersSteamIDs} - DeleteEntryOnMapWipe: {deleteEntryOnMapWipe})",
+  "Entry_delete": "Deleted Entry {entryID}.",
+  "Entry_add_pending_players": "(Entry {entryID}): Added to Pending Players (\"{pendingPlayers}\").",
+  "Entry_remove_pending_player": "(Entry {entryID}): Removed Pending Player {pendingPlayer}.",
+  "Entry_add_given_players": "(Entry {entryID}): Added to Given Players (\"{givenPlayers}\").",
+  "Entry_remove_given_player": "(Entry {entryID}): Removed Given Player {givenPlayer}.",
+  "Player_give_gift_failed_inventory_full": "Failed to receive gift. Not enough space in your inventory, please clear your inventory and then type <color=#ADD8E6>/sclaim</color> to manually claim it.",
+  "Player_give_gifts_failed_inventory_full": "Failed to receive gifts. Not enough space in your inventory, please clear your inventory and then type <color=#ADD8E6>/sclaim</color> to manually claim them.",
+  "Player_give_item_success": "You have received a gift of {itemAmount} {itemName} in your inventory.",
+  "Player_claim_item_success": "You have claimed a gift of {itemAmount} {itemName} in your inventory.",
+  "Player_claim_no_gifts": "No gifts to claim.",
+  "Distributor_give_player_item": "(Entry {entryID}): Gave {itemAmount} {itemName} to player {playerName} ({playerID}).",
+  "Distributor_failed_give_player_item": "(Entry {entryID}): Failed to give {itemAmount} {itemName} to player {playerName} ({playerID})."
+}
+```
 
 # Future Development
 - Better text formatting.
