@@ -35,15 +35,15 @@ Works for both chat and console
     - Adds the given input players to the pending player list.
     - Distributes to players from the pending players list and then remove them from the list.
  2. **MapPlayers**
-    - Adds all players that exists on the map (alive or sleeping) using `BasePlayer.allPlayerList` to the pending player list.
+    - Adds all players that are alive or sleeping on the map (using `BasePlayer.allPlayerList`) to the pending player list.
     - Distributes to players from the pending players list and then remove them from the list.
  3. **ServerPlayers**
-    - Adds all players that exists have joined the server before using `covalence.Players.All` to the pending player list.
+    - Adds all players that have joined the server before (using `covalence.Players.All`) to the pending player list.
  4. **Everyone**
     - Distributes to any player that joins the server and then add them to the given players list.
 
 ## Item Shortname
-You can find a list of items shortname by searching for `rust item shortname list` or from here https://github.com/OrangeWulf/Rust-Docs/blob/master/Items.md
+You can find a list of items shortname by searching the web for `rust item shortname list` or from https://github.com/OrangeWulf/Rust-Docs/blob/master/Items.md
 
 # Configuration
 ```json
