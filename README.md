@@ -68,9 +68,7 @@ You can find a list of items shortname by searching for `rust item shortname lis
 }
 ```
 
-# Data File
-
-## Example
+# Data File Example
 ```
 {
   "Entries": [
