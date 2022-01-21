@@ -1024,7 +1024,7 @@ namespace Oxide.Plugins
                 { "Invalid_item_shortname", "Invalid item shortname." },
                 { "Invalid_distribution_type_cannot_add_pending_players", "Cannot add to pending players, Invalid distribution type." },
                 { "Invalid_distribution_type_cannot_add_given_players", "Cannot add to given players, Invalid distribution type." },
-                { "Required_field_players_steam_id", "Players SteamID field is required." },
+                { "Required_field_players_steam_id", "Players steamID64 field is required." },
                 { "Entry_invalid_id", "Invalid entry ID." },
                 { "Entry_new_item", "Created Item Entry (ID: {entryID} - ShortName: {shortName}, Amount: {amount} - DistributionType: {distributionType} - Players: {playersSteamIDs} - DeleteEntryOnMapWipe: {deleteEntryOnMapWipe})" },
                 { "Entry_list", "All Entry IDs ({entryIDs})." },
