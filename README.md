@@ -25,15 +25,14 @@ Works for both chat and console
 - `sgift.entry.add_given_players "<entry id>" "<players steamID64>"` -- Add given players to an entry.
 - `sgift.entry.remove_given_player "<entry id>" "<player steamID64>"` -- Remove given player from an entry.
 
-_Notes:_ 
-- `<players steamID64>` accepts multiple values separated by commas.
-- `<delete on map wipe>` only accepts the value `"true"` or `"false"`.
-
-
-#### Example
- - `sgift.entry.new_item "wood" "100" "SpecificPlayers" "765111xxxxxxxxxxx,765111xxxxxxxxxxx,765111xxxxxxxxxxx" "false"`
+#### Examples
+ - `sgift.entry.new_item "wood" "100" "SpecificPlayers" "765111xxxxxxxxxxx,765111xxxxxxxxxxx" "false"`
  - `sgift.entry.new_item "scrap" "200" "MapPlayers" "" "true"`
  - `sgift.entry.new_item "wood" "100" "Everyone"`
+
+#### Notes
+- `<players steamID64>` accepts multiple values separated by commas.
+- `<delete on map wipe>` only accepts the value **"true"** or **"false"**.
 
 #### Gift Distribution Types
  1. **SpecificPlayers**
