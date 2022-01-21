@@ -113,7 +113,7 @@ The log files are located in `oxide/logs/SmartGifts/smartgifts_-YYYY-MM-DD.txt`.
 ## Localization
 ```json
 {
-  "LangVersion": "0.0.1",
+  "LangVersion": "0.0.2",
   "Error": "An error occured.",
   "Invalid_syntax": "Invalid syntax.",
   "Invalid_item_shortname": "Invalid item shortname.",
