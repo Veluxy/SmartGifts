@@ -1,5 +1,5 @@
 # Features
-Distribute gifts to any player when they awake from sleep or claim them manually.
+Distribute gifts to any player when they awake from sleep or when manually claimed.
 - Gift an item to specific players regardless of status (online/offline/alive/dead/sleeping).
 - Gift an item to all players.
 - Automatically distribute the gift item when a player awakes from sleep.
@@ -16,14 +16,19 @@ Works for chat only
 
 # Admin Commands
 Works for both chat and console
-- `sgift.entry.new_item "<item shortname>" "<item amount>" "<distribution type>" "<players steamID64 (separated with commas|optional)>" "<delete on map wipe? (true/false|optional)>"` -- Creates a new entry.
+- `sgift.entry.new_item "<item shortname>" "<item amount>" "<distribution type>" "<players steamID64 (optional)>" "<delete on map wipe (optional)>"` -- Creates a new entry.
 - `sgift.entry.list"` -- List all entries id.
 - `sgift.entry.view "<entry id>"` -- View details about an entry.
 - `sgift.entry.delete "<entry id>"` -- Deletes an entry.
-- `sgift.entry.add_pending_players "<entry id>" "<players steamID64 (separated with commas)>"` -- Add pending players to an entry.
-- `sgift.entry.remove_pending_player "<entry id>" "<player steamID64 (separated with commas)>"` -- Remove pending player from an entry.
-- `sgift.entry.add_given_players "<entry id>" "<players steamID64 (separated with commas)>"` -- Add given players to an entry.
-- `sgift.entry.remove_given_player "<entry id>" "<player steamID64 (separated with commas)>"` -- Remove given player from an entry.
+- `sgift.entry.add_pending_players "<entry id>" "<players steamID64>"` -- Add pending players to an entry.
+- `sgift.entry.remove_pending_player "<entry id>" "<player steamID64>"` -- Remove pending player from an entry.
+- `sgift.entry.add_given_players "<entry id>" "<players steamID64>"` -- Add given players to an entry.
+- `sgift.entry.remove_given_player "<entry id>" "<player steamID64>"` -- Remove given player from an entry.
+
+**_Notes:_** 
+- `<players steamID64>` accepts multiple values separated by commas.
+- `<delete on map wipe>` only accepts the value `"true"` or `"false"`.
+
 
 ## Example
  - `sgift.entry.new_item "wood" "100" "SpecificPlayers" "765111xxxxxxxxxxx,765111xxxxxxxxxxx,765111xxxxxxxxxxx" "false"`
@@ -43,7 +48,7 @@ Works for both chat and console
     - Distributes to any player that joins the server and then add them to the given players list.
 
 ## Item Shortname
-You can find a list of items shortname by searching the web for `rust item shortname list` or from https://github.com/OrangeWulf/Rust-Docs/blob/master/Items.md
+You can find a list of items shortname by searching the web for `rust item shortname list` or from [https://github.com/OrangeWulf/Rust-Docs/blob/master/Items.md](https://github.com/OrangeWulf/Rust-Docs/blob/master/Items.md)
 
 # Configuration
 ```json
