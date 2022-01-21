@@ -10,8 +10,8 @@ using UnityEngine;
 
 namespace Oxide.Plugins
 {
-    [Info("SmartGifts", "TechnoMaster", "0.0.1")]
-    [Description("Distribute gifts to any player when they awake from sleep or claim them manually.")]
+    [Info("SmartGifts", "TechnoMaster", "0.0.2")]
+    [Description("Distribute gifts to any player when they awake from sleep or when manually claimed.")]
     internal class SmartGifts : RustPlugin
     {
         [PluginReference]
