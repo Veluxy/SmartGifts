@@ -10,7 +10,7 @@ using UnityEngine;
 
 namespace Oxide.Plugins
 {
-    [Info("SmartGifts", "TechnoMaster", "0.0.2")]
+    [Info("Smart Gifts", "TechnoMaster", "0.0.4")]
     [Description("Distribute gifts to any player when they awake from sleep or when manually claimed.")]
     internal class SmartGifts : RustPlugin
     {
@@ -63,6 +63,21 @@ namespace Oxide.Plugins
         private void OnPlayerSleepEnded(BasePlayer player) => DistributeGifts(player);
 
         private void Loaded() => AddOnlinePlayersToCache();
+
+        private void Unload()
+        {
+            onlinePlayersCache = null;
+            mapWiped = false;
+            uidPrefix = null;
+            DEFAULT_ADMIN_PERM = null;
+            DEFAULT_DISCORD_WEBHOOK = null;
+            DEFAULT_PREFIX = null;
+            DEFAULT_PREFIX_COLOR = null;
+            DEFAULT_CLAIM_COMMAND = null;
+            _configData = null;
+            GIFT_ENTRIES_DATA_FILE = null;
+            giftEntriesData = null;
+        }
 
         #endregion Hooks
 
@@ -1019,7 +1034,7 @@ namespace Oxide.Plugins
             lang.RegisterMessages(new Dictionary<string, string>
             {
                 { "LangVersion", this.Version.ToString() },
-                { "Error", "An error occured." },
+                { "Error", "An error occurred." },
                 { "Invalid_syntax", "Invalid syntax." },
                 { "Invalid_item_shortname", "Invalid item shortname." },
                 { "Invalid_distribution_type_cannot_add_pending_players", "Cannot add to pending players, Invalid distribution type." },
